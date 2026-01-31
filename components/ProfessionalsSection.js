@@ -32,20 +32,18 @@ export default function ProfessionalsSection() {
           <div className="w-px h-16 bg-gray-200"></div>
         </div>
 
-        {/* Green Dot */}
-        <div className="flex justify-center mb-4">
-          <div className="w-2 h-2 rounded-full bg-[#B4D335] mt-12"></div>
-        </div>
-
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 mt-16">
           <div>
-            <h2 
-              className="text-2xl md:text-3xl font-bold mb-3"
-              style={{ fontFamily: 'Matter, sans-serif' }}
-            >
-              Meet our professionals
-            </h2>
+            <div className="flex items-start gap-1">
+              <h2 
+                className="text-2xl md:text-3xl font-bold mb-3"
+                style={{ fontFamily: 'Matter, sans-serif' }}
+              >
+                Meet our professionals
+              </h2>
+              <span className="w-2 h-2 rounded-full bg-[#B4D335] mt-1" />
+            </div>
             <p 
               className="text-gray-500 text-sm max-w-xs"
               style={{ fontFamily: 'Matter, sans-serif' }}
