@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
+
+// Replace with your GitHub repository name
+const repoName = 'kwm-assignment'
+const isProduction = process.env.NODE_ENV === 'production'
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -7,9 +12,8 @@ const nextConfig = {
   },
   // For GitHub Pages deployment
   trailingSlash: true,
-  // Replace 'kwm-assignment' with your GitHub repository name
-  basePath: '/kwm-assignment',
-  assetPrefix: '/kwm-assignment/',
+  basePath: isProduction ? `/${repoName}` : '',
+  assetPrefix: isProduction ? `/${repoName}/` : '',
 }
 
 module.exports = nextConfig
