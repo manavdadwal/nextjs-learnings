@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { useState } from 'react'
-
+// section file.
 export default function AboutSection() {
   const [activeTab, setActiveTab] = useState('about')
   
