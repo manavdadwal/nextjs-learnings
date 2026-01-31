@@ -8,38 +8,36 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50: '#fef3e2',
-          100: '#fde4be',
-          200: '#fbd391',
-          300: '#f9c164',
-          400: '#f7b442',
-          500: '#f5a623',
-          600: '#e89718',
-          700: '#d78512',
-          800: '#c6740d',
-          900: '#a85c05',
+          50: '#f7fee7',
+          100: '#ecfccb',
+          200: '#d9f99d',
+          300: '#bef264',
+          400: '#a3e635',
+          500: '#B4D335', // Main SSA lime green
+          600: '#9CBD2C',
+          700: '#84a323',
+          800: '#6b8a1c',
+          900: '#526815',
         },
-        dark: {
-          50: '#f4f4f5',
-          100: '#e4e4e7',
-          200: '#d4d4d8',
-          300: '#a1a1aa',
-          400: '#71717a',
-          500: '#52525b',
-          600: '#3f3f46',
-          700: '#27272a',
-          800: '#18181b',
-          900: '#09090b',
+        ssa: {
+          lime: '#B4D335',
+          green: '#9CBD2C',
+          dark: '#1a1a1a',
+          gray: '#666666',
+          light: '#f5f5f5',
         }
       },
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
-        body: ['Source Sans Pro', 'sans-serif'],
+        display: ['Playfair Display', 'Georgia', 'serif'],
+        body: ['Source Sans Pro', 'Arial', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.8s ease-out forwards',
         'slide-up': 'slideUp 0.6s ease-out forwards',
+        'slide-in-right': 'slideInRight 0.6s ease-out forwards',
         'float': 'float 6s ease-in-out infinite',
+        'pulse-slow': 'pulse 3s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -50,13 +48,20 @@ module.exports = {
           '0%': { opacity: '0', transform: 'translateY(30px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        slideInRight: {
+          '0%': { opacity: '0', transform: 'translateX(30px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-20px)' },
         },
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-ssa': 'linear-gradient(135deg, #9CBD2C 0%, #B4D335 100%)',
+      },
     },
   },
   plugins: [],
 }
-

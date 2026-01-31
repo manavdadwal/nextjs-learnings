@@ -1,22 +1,39 @@
 import Layout from '../components/Layout'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Custom404() {
   return (
-    <Layout title="404 | Page Not Found">
-      <section className="pt-32 pb-20 px-6 min-h-[80vh] flex items-center justify-center">
+    <Layout title="Page Not Found | SSA Hunter Valley">
+      {/* Header */}
+      <div className="bg-white py-6 px-6 border-b">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <Link href="/">
+            <a>
+              <Image
+                src="/images/SSA-Logo03 1.png"
+                alt="SSA Logo"
+                width={60}
+                height={40}
+              />
+            </a>
+          </Link>
+        </div>
+      </div>
+
+      <section className="py-20 px-6 bg-white min-h-[60vh] flex items-center justify-center">
         <div className="text-center">
-          <div className="text-9xl font-display font-bold text-gradient mb-6">
+          <h1 className="text-8xl font-bold text-[#B4D335] mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
             404
-          </div>
-          <h1 className="font-display text-3xl font-bold text-white mb-4">
-            Page Not Found
           </h1>
-          <p className="font-body text-gray-400 mb-8 max-w-md mx-auto">
-            Oops! The page you&apos;re looking for doesn&apos;t exist or has been moved.
+          <h2 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
+            Page Not Found
+          </h2>
+          <p className="text-gray-500 mb-8 max-w-md mx-auto">
+            The page you are looking for might have been removed or is temporarily unavailable.
           </p>
           <Link href="/">
-            <a className="inline-flex px-8 py-4 bg-gradient-to-r from-purple-600 to-orange-500 rounded-full font-body font-semibold text-white hover:shadow-xl hover:shadow-purple-500/25 transform hover:-translate-y-1 transition-all duration-300">
+            <a className="inline-flex px-8 py-3 bg-[#B4D335] text-white rounded-sm font-semibold hover:bg-[#9CBD2C] transition-all duration-300">
               Back to Home
             </a>
           </Link>
@@ -25,4 +42,3 @@ export default function Custom404() {
     </Layout>
   )
 }
-
