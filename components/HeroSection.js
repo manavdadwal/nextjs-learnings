@@ -43,20 +43,20 @@ export default function HeroSection() {
       {/* Main Content */}
       <div className="relative z-10 h-full flex flex-col justify-center items-center text-center text-white px-6">
         {/* Subtitle */}
-        <p className="text-[10px] sm:text-xs md:text-sm tracking-[0.25em] mb-3 sm:mb-4 font-light">
+        <p className="text-xs tracking-[0.25em] mb-4 font-light whitespace-nowrap">
           SSA HUNTER VALLEY
         </p>
 
         {/* Main Heading */}
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light mb-1 tracking-wide" style={{ fontFamily: 'Matter, sans-serif' }}>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-1 tracking-wide whitespace-nowrap" style={{ fontFamily: 'Matter, sans-serif' }}>
           GROW YOUR GAME WITH THE
         </h1>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-8 sm:mb-10 underline decoration-[#B4D335] decoration-2 underline-offset-8" style={{ fontFamily: 'Matter, sans-serif' }}>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-10 underline decoration-[#B4D335] decoration-2 underline-offset-8 whitespace-nowrap" style={{ fontFamily: 'Matter, sans-serif' }}>
           PROFESSIONALS
         </h1>
 
         {/* Tagline with Background */}
-        <div className="relative mb-8 sm:mb-10 flex items-center justify-center">
+        <div className="relative mb-10 flex items-center justify-center">
           {/* Background Image */}
           <div className="absolute inset-0 flex items-center justify-center">
             <Image
@@ -67,12 +67,12 @@ export default function HeroSection() {
               objectFit="contain"
             />
           </div>
-          <div className="relative z-10 flex items-center justify-center gap-3 sm:gap-6 px-10 sm:px-20 py-3 sm:py-4">
-            <span className="text-[10px] sm:text-xs md:text-sm tracking-[0.2em] font-light">ADOPT</span>
-            <span className="text-white text-base sm:text-xl">•</span>
-            <span className="text-[10px] sm:text-xs md:text-sm tracking-[0.2em] font-light">NURTURE</span>
-            <span className="text-white text-base sm:text-xl">•</span>
-            <span className="text-[10px] sm:text-xs md:text-sm tracking-[0.2em] font-light">DELIVER</span>
+          <div className="relative z-10 flex items-center justify-center gap-6 px-20 py-4 whitespace-nowrap">
+            <span className="text-sm tracking-[0.2em] font-light">ADOPT</span>
+            <span className="text-white text-xl">•</span>
+            <span className="text-sm tracking-[0.2em] font-light">NURTURE</span>
+            <span className="text-white text-xl">•</span>
+            <span className="text-sm tracking-[0.2em] font-light">DELIVER</span>
           </div>
         </div>
 
